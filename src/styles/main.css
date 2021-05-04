@@ -1,0 +1,87 @@
+img {
+    display: block;
+}
+
+.wrapper {
+    display: grid;
+}
+
+/* styling pendukung */
+.wrapper div {
+    border: 1px dashed black;
+    padding: 16px;
+}
+
+.hero {
+    display: flex;
+    background-image: url('/images/heros/hero-image_4.jpg');
+    height: 200px;
+}
+
+/* Main */
+.main {
+    text-align: center;
+}
+
+.card {
+    display: grid;
+
+    justify-content: center;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 400px 400px;
+}
+
+.card-item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 20px 0 0;
+}
+
+.card-item div {
+    text-align: initial;
+}
+
+.footer {
+    text-align: center;
+}
+
+/* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+
+.logo {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+}
+
+.item.button {
+    order: 2;
+}
+
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.active .item {
+    display: block;
+}
+
+.button.secondary {
+    border-bottom: 1px #444 solid;
+}
