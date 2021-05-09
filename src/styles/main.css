@@ -4,31 +4,54 @@ img {
 
 .wrapper {
     display: grid;
+    overflow-x: hidden;
 }
 
 /* styling pendukung */
-.wrapper div {
-    border: 1px dashed black;
+.wrapper > div {
     padding: 16px;
+}
+
+div {
+    border: 1px dashed black;
 }
 
 .hero {
     display: flex;
     background-image: url('/images/heros/hero-image_4.jpg');
     height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Main */
+
+/* minimal layar ukuran besar */
+@media screen and (min-width: 768px) {
+    .card {
+        text-align: center;
+        display: grid;
+        grid-row-gap: 20px;
+    }
+
+    .card-item {
+        margin: 0 0 0 0 !important;
+    }
+
+    .card-item:not(:nth-child(3n)) {
+        margin-right: 8px !important;
+    }
+}
+
 .main {
     text-align: center;
 }
 
 .card {
-    display: grid;
-
+    width: 100%;
     justify-content: center;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 400px 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 600px 600px;
 }
 
 .card-item {
@@ -38,15 +61,34 @@ img {
     align-content: flex-start;
     align-items: center;
     justify-content: space-around;
-    margin: 0 20px 0 0;
+    background: blue;
+}
+
+.card-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.card-item img {
+    max-width: 100%;
+    height: auto;
 }
 
 .card-item div {
     text-align: initial;
+
+    width: 100%;
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rating {
+    font-size: small;
 }
 
 .footer {
     text-align: center;
+    background: aqua;
 }
 
 /* Mobile menu */
@@ -84,4 +126,10 @@ img {
 
 .button.secondary {
     border-bottom: 1px #444 solid;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
