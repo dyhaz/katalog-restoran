@@ -1,0 +1,30 @@
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
+body {
+  background-color: #9eb7e5;
+}
+
+.card-item {
+  background-color: #648de5;
+  border: 1px solid #304c89;
+}
+
+.footer {
+  background-color: #304c89;
+  color: #e8e5da;
+}
+
+.menu {
+  background-color: #648de5;
+}
+.menu li {
+  background-color: #e8e5da;
+}
+
+#ribbon-container a {
+  border: 2px solid #304c89;
+}
+
+/*# sourceMappingURL=colors.css.map */

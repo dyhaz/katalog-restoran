@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-dev": "webpack-dev-server --config webpack.dev.js",
+    "start-dev": "sass src/styles/colors.scss src/styles/colors.css && webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "test": "karma start"
+    "test": "karma start",
+    "watch-css": "sass --watch src/styles/colors.scss src/styles/colors.scss"
   },
   "keywords": [],
   "author": "muhammad <muhammad-11@fst.unair.ac.id>",
@@ -27,6 +28,7 @@
     "karma-jasmine": "^3.3.1",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^4.0.2",
+    "sass": "^1.32.12",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
