@@ -50,7 +50,14 @@ function processData(res) {
                     </div>
                 </div>
                 <div>
-                    <p class="rating">Rating: ${arr[i].rating}</p>
+                    <div class="star-wrapper">
+                      <a href="#" class="fas fa-star s1 ${arr[i].rating >= 1 ? 'active' : ''}"></a>
+                      <a href="#" class="fas fa-star s2 ${arr[i].rating >= 2 ? 'active' : ''}"></a>
+                      <a href="#" class="fas fa-star s3 ${arr[i].rating >= 3 ? 'active' : ''}"></a>
+                      <a href="#" class="fas fa-star s4 ${arr[i].rating >= 4 ? 'active' : ''}"></a>
+                      <a href="#" class="fas fa-star s5" ${arr[i].rating === 5 ? 'active' : ''}></a>
+                      (${arr[i].rating + '/ 5'})
+                    </div> 
                     <h4>${arr[i].name}</h4>
                     <p>${truncateStr(arr[i].description, 411)}</p>
                 </div>

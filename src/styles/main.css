@@ -18,7 +18,7 @@ div {
 
 .hero {
     display: flex;
-    background-image: url('/images/heros/hero-image_4.jpg');
+    background-image: url('/images/heros/hero-image_2.jpg');
     height: 200px;
     background-repeat: no-repeat;
     background-position: center;
@@ -93,6 +93,7 @@ div {
 }
 
 /* Mobile menu */
+
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -136,6 +137,7 @@ ul {
 }
 
 /* Tablet menu */
+
 @media all and (min-width: 700px) {
     .menu {
         justify-content: center;
@@ -174,6 +176,7 @@ ul {
 }
 
 /* Desktop menu */
+
 @media all and (min-width: 960px) {
     .menu {
         align-items: stretch;
@@ -194,22 +197,43 @@ ul {
     }
 }
 
+/* Rating */
+
+.star-wrapper {
+    margin-top: 20px;
+    position: initial;
+    /*direction: rtl;*/
+}
+.star-wrapper a {
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+    margin: 4px;
+}
+
+.star-wrapper .active {
+    color: gold;
+}
+
+.star-wrapper a:before {
+    content: "\f005";
+    font-family: FontAwesome;
+}
+
 /* Ribbon */
 
 .content-box {
     position: relative;
     background: gray;
-    /*box-shadow: 0 0 10px rgba(0,0,0,.3);*/
-    /*-moz-box-shadow: 0 0 10px rgba(0,0,0,.3);*/
-    /*-webkit-box-shadow: 0 0 10px rgba(0,0,0,.3);*/
 }
 
 #ribbon-container {
     position: absolute;
     top: 15px;
     left: -20px;
-    overflow: visible; /* so we can see the pseudo-elements we're going to add to the anchor */
-    font-size: 18px; /* font-size and line-height must be equal so we can account for the height of the banner */
+    overflow: visible;
+    font-size: 18px;
     line-height: 18px;
 }
 
@@ -237,7 +261,7 @@ ul {
 #ribbon-container a {
     display:block;
     padding:20px;
-    position:relative; /* allows us to position our pseudo-elements properly */
+    position:relative;
     background:#0089d0;
     overflow:visible;
     margin-right:100px;
@@ -246,37 +270,11 @@ ul {
     text-decoration:none;
 }
 
-/*#ribbon-container a:after {*/
-/*    content:"";*/
-/*    height: 0;*/
-/*    width: 0;*/
-/*    display:block;*/
-/*    position:absolute;*/
-/*    bottom:-15px;*/
-/*    left:0;*/
-/*    border-top: 15px solid #004a70;*/
-/*    border-left: 15px solid transparent;*/
-/*}*/
-
-/*#ribbon-container a:before {*/
-/*    content:"";*/
-/*    height: 0;*/
-/*    width: 0;*/
-/*    display:block;*/
-/*    position:absolute;*/
-/*    top:0;*/
-/*    right:-29px;*/
-/*    border-top: 29px solid #0089d0;*/
-/*    border-bottom: 29px solid #0089d0;*/
-/*    border-right: 29px solid transparent;*/
-/*    border-left: 29px solid transparent;*/
-/*}*/
-
 #ribbon-container a:hover {
     background:#009ff1;
 }
 
-#ribbon-container a:hover:before { /* this makes sure that the "forked" part of the ribbon changes color with the anchor on :hover */
+#ribbon-container a:hover:before {
     border-top: 29px solid #009ff1;
     border-bottom: 29px solid #009ff1;
 }
