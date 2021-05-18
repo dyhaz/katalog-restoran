@@ -19,8 +19,9 @@ body {
 .menu {
   background-color: #648de5;
 }
+
 .menu li {
-  background-color: #e8e5da;
+  background-color: #648de5;
 }
 
 #ribbon-container a {

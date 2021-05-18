@@ -16,6 +16,31 @@ div {
     /*border: 1px dashed black;*/
 }
 
+
+#drawer ul {
+    list-style-type: none;
+    padding: 0 16px;
+}
+
+
+#drawer li {
+    padding: 5px 0px;
+}
+
+
+#drawer a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+
+#hamburger {
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+}
+
 .hero {
     display: flex;
     background-image: url('/images/heros/hero-image_2.jpg');
@@ -94,18 +119,6 @@ div {
 
 /* Mobile menu */
 
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-}
-
-.menu li a {
-    display: block;
-    padding: 15px 5px;
-}
-
 .logo {
     font-size: 20px;
     padding: 7.5px 10px 7.5px 0;
@@ -136,11 +149,32 @@ ul {
     padding: 0;
 }
 
+#drawer {
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    /* menyembunyikan #drawer -250px (sesuai dengan ukuran lebar drawer) ke kiri */
+    transform: translate(-250px, 0);
+    transition: transform 0.3s ease-in-out;
+}
+
+#drawer.open {
+    transform: translate(0,0)
+}
+
 /* Tablet menu */
 
 @media all and (min-width: 700px) {
+    .menu li a {
+        display: block;
+        padding: 15px 5px;
+    }
+
     .menu {
         justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
     }
     .logo {
         flex: 1;
@@ -179,24 +213,45 @@ ul {
 
 @media all and (min-width: 960px) {
     .menu {
+        display: flex;
         align-items: stretch;
         flex-wrap: nowrap;
         background: none;
+        width: 100%;
     }
+
+    .menu li a {
+        display: block;
+        padding: 15px 5px;
+    }
+
     .logo {
         order: 0;
     }
+
     .item {
         order: 1;
         position: relative;
         display: block;
         width: auto;
     }
+
     .button {
         order: 2;
     }
-}
 
+    #drawer {
+        width: 100%;
+        display: flex;
+        position: relative;
+        transform: none;
+        transition: none;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
 /* Rating */
 
 .star-wrapper {

@@ -48,11 +48,15 @@ body {
   color: $alabaster;
 }
 
+#drawer {
+  background-color: $y-in-mn-blue;
+}
+
 .menu {
   background-color: $united-nations-blue;
 
   & li {
-    background-color: $alabaster;
+    background-color: $united-nations-blue;
   }
 }
 
