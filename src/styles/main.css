@@ -30,7 +30,7 @@ div {
 
 #drawer a {
     text-decoration: none;
-    font-size: 25px;
+    /*font-size: 25px;*/
     color: white;
 }
 
@@ -120,6 +120,7 @@ div {
 /* Mobile menu */
 
 .logo {
+    font-family: VeganStyle;
     font-size: 20px;
     padding: 7.5px 10px 7.5px 0;
 }
@@ -133,6 +134,10 @@ div {
     width: 100%;
     text-align: center;
     /*display: none;*/
+}
+
+.item a {
+    font-size: 1.2em;
 }
 
 .active .item {
@@ -156,6 +161,8 @@ ul {
     /* menyembunyikan #drawer -250px (sesuai dengan ukuran lebar drawer) ke kiri */
     transform: translate(-250px, 0);
     transition: transform 0.3s ease-in-out;
+
+    z-index: 1000;
 }
 
 #drawer.open {
@@ -317,19 +324,24 @@ ul {
     display:block;
     padding:20px;
     position:relative;
-    background:#0089d0;
     overflow:visible;
     margin-right:100px;
     margin-left: 10px;
-    color:#fff;
     text-decoration:none;
 }
 
-#ribbon-container a:hover {
-    background:#009ff1;
-}
 
 #ribbon-container a:hover:before {
     border-top: 29px solid #009ff1;
     border-bottom: 29px solid #009ff1;
 }
+
+
+/* Fonts */
+@font-face {
+    font-family: 'VeganStyle';
+    font-style: normal;
+    font-weight: normal;
+    src: local('VeganStyle'), url('/fonts/VeganStyle/VeganStyle.woff') format('woff');
+}
+

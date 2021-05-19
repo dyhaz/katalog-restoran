@@ -29,6 +29,12 @@ body {
 
 #ribbon-container a {
   border: 2px solid #304c89;
+  background-color: #648de5;
+  color: #e8e5da;
+}
+
+#ribbon-container a:hover {
+  background: #9eb7e5;
 }
 
 .item:hover {

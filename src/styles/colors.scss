@@ -60,10 +60,17 @@ body {
   }
 }
 
+// Ribbon
+
 #ribbon-container a {
   border: 2px solid $y-in-mn-blue;
+  background-color: $united-nations-blue;
+  color: $alabaster;
 }
 
+#ribbon-container a:hover {
+  background: $wild-blue-yonder;
+}
 
 // Navbar
 
