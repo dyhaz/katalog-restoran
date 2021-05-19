@@ -132,7 +132,7 @@ div {
     order: 3;
     width: 100%;
     text-align: center;
-    display: none;
+    /*display: none;*/
 }
 
 .active .item {

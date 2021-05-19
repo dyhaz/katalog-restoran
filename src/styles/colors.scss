@@ -49,7 +49,7 @@ body {
 }
 
 #drawer {
-  background-color: $y-in-mn-blue;
+  background-color: $united-nations-blue;
 }
 
 .menu {
@@ -63,3 +63,9 @@ body {
 #ribbon-container a {
   border: 2px solid $y-in-mn-blue;
 }
+
+
+// Navbar
+
+.item:hover {background-color: $y-in-mn-blue;}
+
