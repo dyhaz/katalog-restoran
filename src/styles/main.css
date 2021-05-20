@@ -44,9 +44,17 @@ div {
 .hero {
     display: flex;
     background-image: url('/images/heros/hero-image_2.jpg');
+    background-size: cover;
     height: 200px;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.hero-text {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    font-size: 1.2em;
 }
 
 /* Main */
@@ -76,7 +84,7 @@ div {
     width: 100%;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 600px 600px;
+    /*grid-template-rows: 600px 600px;*/
 }
 
 .card-item {
@@ -86,6 +94,7 @@ div {
     align-content: flex-start;
     align-items: center;
     justify-content: space-around;
+    box-shadow: 5px 5px 2px #aaaaaa;
     /*background: blue;*/
 }
 
