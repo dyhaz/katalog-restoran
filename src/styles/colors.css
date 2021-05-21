@@ -1,44 +1,45 @@
 /* SCSS HEX */
-/* SCSS HSL */
-/* SCSS RGB */
-/* SCSS Gradient */
 body {
-  background-color: #9eb7e5;
+  background-color: #fffbdf;
 }
 
 .card-item {
-  background-color: #648de5;
-  border: 1px solid #304c89;
+  background-color: #c6ffc1;
+  border: 1px solid #334443;
 }
 
 .footer {
-  background-color: #304c89;
-  color: #e8e5da;
+  background-color: #14282b;
+  color: #c6ffc1;
 }
 
 #drawer {
-  background-color: #648de5;
+  background-color: #34656d;
 }
 
 .menu {
-  background-color: #648de5;
+  background-color: #34656d;
 }
 .menu li {
-  background-color: #648de5;
+  background-color: #34656d;
+}
+
+.hero-text {
+  color: #fffbdf;
 }
 
 #ribbon-container a {
-  border: 2px solid #304c89;
-  background-color: #648de5;
-  color: #e8e5da;
+  border: 2px solid #14282b;
+  background-color: #334443;
+  color: #c6ffc1;
 }
 
 #ribbon-container a:hover {
-  background: #9eb7e5;
+  background: #34656d;
 }
 
 .item:hover {
-  background-color: #304c89;
+  background-color: #14282b;
 }
 
 /*# sourceMappingURL=colors.css.map */
