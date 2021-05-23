@@ -2,75 +2,75 @@
   "restaurants": [
     {
       "id": "6c7bqjgi84kcowlqdz",
-      "name": "Bring Your Phone Cafe",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "name": "Fortunate Coffee",
+      "description": "The place is cool and very comfortable for relaxing and chatting, doing assignments or work is also okay because it feels like a private cafe, only sometimes if the afternoon is too crowded with small children from the monastery it becomes quite noisy. It is recommended to come around 10 am -2 noon. In terms of diverse and healthy food, don't expect meat because it does carry a vegetarian theme. Friendly and fast service. Overall recommended for people who don't like crowded places.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/41",
-      "city": "Medan",
-      "rating": 4.6
+      "city": "Tangerang",
+      "rating": 4.5
     },
     {
       "id": "ljx8i0qu2uckcowlqdz",
-      "name": "Run The Gun",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "name": "Burgreens",
+      "description": "Burgreens is the leading plant-based food chain in Indonesia specializing in delicious Asian & Western cuisines.\n\nWe believe that what we eat directly impacts our health, farmers' welfare, and environmental sustainability. Burgreens was started very humbly in November 2013 by a young vegan couple – Max & Helga – who are passionate about making a healthy and sustainable lifestyle mainstream in their hometown; while testing a social enterprise model that marries positive social impact and financial sustainability.\n\nCulinary innovation and local empowerment are the heart of what we do. You can enjoy your favorite comfort food from Burgers, Rendang, Bibimbap, to Vegan Boba - recreated 100% from plants at our restaurants.\n\nWhether you are a flexitarian, vegan or vegetarian - rest assured you will find something you love here!",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/07",
-      "city": "Bali",
+      "city": "Menteng, Jakarta",
       "rating": 4.6
     },
     {
       "id": "fe8bbxoazddkcowlqdz",
-      "name": "Pangsit Express",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "name": "Dharma Kitchen",
+      "description": "This restaurant serves food and drinks known as vegetarian food, where the ingredients are vegetables (not meat). So it can be an option if you want to eat delicious and healthy.\nThe location is in the central park mall, the place is quite spacious, clean and tidy, and friendly service. For those who like vegetarian food, you really have to try Dharma Kitchen. Now, one of the best menus at Dharma Kithen is chicken hainam rice with butter fried chicken.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/29",
-      "city": "Ternate",
-      "rating": 4.8
+      "city": "Tanjung Duren",
+      "rating": 4.0
     },
     {
       "id": "ik1zljmlf68kcowlqdz",
-      "name": "Ducky Duck",
-      "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
+      "name": "Vegetus",
+      "description": "Healthy food for non-vegetarians / vegans and for vegetarians and vegans at the Vegetus Vegetarian restaurant located in Muara Karang. Besides being healthy, the prices are also friendly, and 100% halal.\n\nLong story short about this restaurant having 2 fire incidents but different causes. The first fire was due to electric current and the last fire was due to leaking gas. I had a little time to ask the owner of the restaurant. After this incident, the ambience is suitable for family gatherings even though the size of the place is moderate after renovation. They also implemented a health protocol with a reduction in visitor capacity and it was very good before the corona arrived, eating utensils such as small plates, spoons, and chopsticks in plastic rapping. So it's really hygienic.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/38",
-      "city": "Malang",
-      "rating": 4.7
+      "city": "Muara Karang",
+      "rating": 4.1
     },
     {
       "id": "9jpuzkm6n6jkcowlqdz",
-      "name": "Kafein",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "name": "Latteria",
+      "description": "The gelato outlet here is also popular with many people. Apart from being delicious, they also provide a selection of unique flavors, such as martabak, Kinder Bueno, and Marie Regal. The texture is also not easy to melt with a sweet taste that fits perfectly and is perfect in the mouth. To enjoy it, you have to prepare IDR 38 thousand for 2 scoops of gelato. Instead of your curiosity getting worse, it's better to immediately visit Latteria Gelato to taste taro milk tea flavored gelato decorated with a beautiful purple color.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/40",
-      "city": "Bali",
-      "rating": 3.8
+      "city": "Pantai Indah Kapuk",
+      "rating": 4.6
     },
     {
       "id": "cpl5jpsnuqkkcowlqdz",
-      "name": "Makan mudah",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "name": "Fedwell",
+      "description": "The concept of healthy food currently exists among young people, restaurants that carry the concept of healthy warteg, Fedwell, in the Senopati area. Apart from selling a variety of healthy foods, here they also sell a few drinks. The drinks are quite varied and unique. the place here is also quite comfortable with a modern and all-pink interior. Try the charcoal latte and coffee latte. It's very delicious, not too sweet.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/08",
-      "city": "Malang",
+      "city": "Jakarta Selatan",
       "rating": 4.6
     },
     {
       "id": "iqtf9hmdzvbkcowlqdz",
-      "name": "Saya Suka",
-      "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
+      "name": "Honu",
+      "description": "One of the best poke bowl in Jakarta. Fresh salmon and other ingredients. Nice place to have lunch with your coworkers while waiting for another meeting on the afternoon. They got coffee shops next door and the staffs are so welcoming! Located in the hide-and-seek location, just behind Sarinah, this small shop offer a yummy bowl of poke. It is near Sarinah parking exit, toward the Theresia church, you can find, small shop with green and wood entrance. Blink and you'll have to make another route via sabang or thamrin.\nThey serve variety of poke bowl, but not that many, that you have difficulty of making choice for your limited lunch time.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/32",
-      "city": "Surabaya",
-      "rating": 3.6
+      "city": "Thamrin",
+      "rating": 4.6
     },
     {
       "id": "8i06gqcc2dpkcowlqdz",
-      "name": "Gigitan Cepat",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "name": "Joyful Veggie",
+      "description": "It's in a nice little strip of shops and restaurants. I loved how they have so many options and they're vegan! I had to stop myself from ordering dessert to go. I'll have to come back when I'm in the area. Delicious. They're casual dinning, but their food is really good. There's plenty of seating and as I said they have plenty to choose from. The attendant in the front was friendly. Their only server appeared to have checked on the diners often for water and stuff. I'd eat here next time.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/45",
-      "city": "Aceh",
-      "rating": 4
+      "city": "Jakarta Pusat",
+      "rating": 3.8
     },
     {
       "id": "wf5o19xhxxkcowlqdz",
-      "name": "Fairy Cafe",
-      "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
+      "name": "Loving Hut",
+      "description": "Loving Hut was founded with the vision that all beings, whether humans, animals, and nature can live in harmony in peace, love and harmony. The Loving Hut Vegan restaurant chain started in early 2008 and currently exists in 23 countries with more than 158 restaurants spread all over the world. Loving Hut can be found in the United States, Taiwan (Formosa), Germany, Spain, UK, Canada, Panama, Czech, China, Mongolia, Austria, France, Thailand, Hong Kong, Malaysia, Korea, Japan, Singapore, Australia and Indonesia.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/04",
-      "city": "Malang",
-      "rating": 3.9
+      "city": "Jakarta Pusat",
+      "rating": 4.4
     }
   ]
 }
