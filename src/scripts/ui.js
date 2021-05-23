@@ -26,6 +26,13 @@ document.addEventListener("click", (evt) => {
     }
 });
 
+document.body.onkeyup = function(e){
+    if(e.keyCode === 32 && e.target === document.body){
+        e.preventDefault();
+        drawerElement.classList.toggle("open");
+    }
+}
+
 // setInterval(() => {
 //     if (drawerElement.classList.contains("open")) {
 //         setTimeout(() => {

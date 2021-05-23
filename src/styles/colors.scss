@@ -36,7 +36,7 @@ body {
 }
 
 .hero-text {
-  color: $color1;
+  color: white;
 }
 
 // Ribbon
@@ -55,3 +55,8 @@ body {
 
 .item:hover {background-color: $color5;}
 
+// Header
+.skip-link {
+  background: $color3;
+  color: #fff;
+}
