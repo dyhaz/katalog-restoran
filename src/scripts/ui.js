@@ -26,6 +26,17 @@ document.addEventListener("click", (evt) => {
     }
 });
 
+// Handle menu click
+let listItems = document.querySelectorAll("ul li"); // this returns an array of each li
+listItems.forEach(function(item) {
+    item.onclick = function() {
+        let url = this.childNodes[0].href;
+        if (url) {
+            window.location.href = url;
+        }
+    }
+});
+
 document.body.onkeyup = function(e){
     if(e.keyCode === 32 && e.target === document.body){
         e.preventDefault();

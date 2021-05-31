@@ -24,7 +24,7 @@ div {
 
 
 #drawer li {
-    padding: 5px 0px;
+    padding: 5px 0;
 }
 
 
@@ -39,6 +39,10 @@ div {
     font-size: 44px;
     text-decoration: none;
     color: black;
+    cursor: pointer;
+    padding: 0 5px 0;
+    min-width: 44px;
+    min-height: 44px;
 }
 
 .hero {
@@ -141,6 +145,7 @@ div {
     order: 3;
     width: 100%;
     text-align: center;
+    cursor: pointer;
     /*display: none;*/
 }
 
