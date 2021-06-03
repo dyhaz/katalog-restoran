@@ -279,7 +279,7 @@ ul {
     position: initial;
     /*direction: rtl;*/
 }
-.star-wrapper a {
+.star-wrapper span {
     font-size: 1em;
     color: white;
     text-decoration: none;
@@ -291,7 +291,7 @@ ul {
     color: gold;
 }
 
-.star-wrapper a:before {
+.star-wrapper span:before {
     content: "\f005";
     font-family: FontAwesome;
 }

@@ -1,41 +1,48 @@
 /* SCSS HEX */
 body {
-  background-color: #fffbdf;
+  background-color: #feffde;
+}
+
+main {
+  background-color: #14282b;
+}
+main .fa-bars {
+  color: #fff;
 }
 
 .card-item {
-  background-color: #c6ffc1;
-  border: 1px solid #334443;
+  background-color: #ddffbc;
+  border: 1px solid #52734d;
 }
 
 .footer {
   background-color: #14282b;
-  color: #c6ffc1;
+  color: #ddffbc;
 }
 
 #drawer {
-  background-color: #34656d;
+  background-color: #91c788;
 }
 
 .menu {
-  background-color: #34656d;
+  background-color: #91c788;
 }
 .menu li {
-  background-color: #34656d;
+  background-color: #91c788;
 }
 
 .hero-text {
-  color: white;
+  color: #fff;
 }
 
 #ribbon-container a {
   border: 2px solid #14282b;
-  background-color: #334443;
-  color: #c6ffc1;
+  background-color: #52734d;
+  color: #ddffbc;
 }
 
 #ribbon-container a:hover {
-  background: #34656d;
+  background: #91c788;
 }
 
 .item:hover {
@@ -43,7 +50,7 @@ body {
 }
 
 .skip-link {
-  background: #34656d;
+  background: #91c788;
   color: #fff;
 }
 
