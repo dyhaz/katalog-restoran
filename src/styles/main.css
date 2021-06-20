@@ -111,8 +111,9 @@ button, #hamburger {
     flex-direction: column;
     align-content: flex-start;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     box-shadow: 5px 5px 2px #aaaaaa;
+    border-radius: 25px;
     /*background: blue;*/
 }
 
@@ -316,6 +317,9 @@ ul {
 .content-box {
     position: relative;
     background: gray;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 25px 25px 0 0;
+    border-radius: 25px 25px 0 0;
 }
 
 #ribbon-container {
