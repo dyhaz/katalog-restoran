@@ -32,8 +32,22 @@ div {
     text-decoration: none;
     /*font-size: 25px;*/
     color: white;
+    display: block;
+    min-height: 44px;
 }
 
+button, #hamburger {
+    background: none;
+    border: 1px solid rgba(255, 0, 0, 0);
+    color: inherit;
+    font: inherit;
+    outline: inherit;
+}
+
+#hamburger:focus {
+    outline: none;
+    border: 1px solid white;
+}
 
 #hamburger {
     font-size: 44px;
@@ -68,6 +82,7 @@ div {
         text-align: center;
         display: grid;
         grid-row-gap: 20px;
+        grid-column-gap: 5%;
     }
 
     .card-item {

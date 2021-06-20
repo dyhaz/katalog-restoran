@@ -2,11 +2,14 @@ import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
 import '../styles/colors.css';
 import './ui.js';
-
 console.log('Hello Coders! :)');
 
 let xmlhttp = new XMLHttpRequest();
 let url = "DATA.json";
+
+const maxChars = 200;
+const imgHeight = 213 //213
+const imgWidth = 313 //313
 
 xmlhttp.onreadystatechange = function() {
     if (this.readyState === 4 && this.status === 200) {
@@ -28,7 +31,7 @@ function processData(res) {
             // create an off-screen canvas
             let canvas = document.createElement('canvas'),
                 ctx = canvas.getContext('2d');
-            ctx.drawImage(img, 0, 0, 313, 213);
+            ctx.drawImage(img, 0, 0, imgWidth, imgHeight);
 
             // encode image to data-uri with base64 version of compressed image
             document.getElementsByClassName("img" + id)[0].src = canvas.toDataURL();
@@ -60,7 +63,7 @@ function processData(res) {
                       (${arr[i].rating + '/ 5'})
                     </div> 
                     <h4>${arr[i].name}</h4>
-                    <p>${truncateStr(arr[i].description, 411)}</p>
+                    <p>${truncateStr(arr[i].description, maxChars)}</p>
                 </div>
             </div>
         `
