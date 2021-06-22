@@ -154,6 +154,24 @@ button, #hamburger {
     padding: 7.5px 10px 7.5px 0;
 }
 
+.logo a {
+    align-content: center;
+}
+
+.logo a div {
+    display: flex;
+}
+
+.img-logo {
+    display: inline-flex;
+    margin-right: 6px;
+}
+
+.main-title {
+    display: inline-flex;
+    align-self: flex-end
+}
+
 .item.button {
     order: 2;
 }
