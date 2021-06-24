@@ -1,9 +1,19 @@
 const hamburgerButtonElement = document.querySelector("#hamburger");
 const drawerElement = document.querySelector("#drawer");
 
+const toggleDrawer = () => {
+    if (drawerElement.classList.contains("open")) {
+        //  show overlay behind
+    } else {
+        //  hide overlay behind
+    }
+
+    drawerElement.classList.toggle("open");
+}
+
 
 hamburgerButtonElement.addEventListener("click", event => {
-    drawerElement.classList.toggle("open");
+    toggleDrawer();
     event.stopPropagation();
 });
 
@@ -22,13 +32,13 @@ document.addEventListener("click", (evt) => {
         } while (targetElement);
 
         // This is a click outside.
-        drawerElement.classList.toggle("open");
+        toggleDrawer();
     }
 });
 
 // Handle menu click
 let listItems = document.querySelectorAll("ul li"); // this returns an array of each li
-listItems.forEach(function(item) {
+listItems.forEach((item) => {
     item.onclick = function() {
         let url = this.childNodes[0].href;
         if (url) {
@@ -38,9 +48,9 @@ listItems.forEach(function(item) {
 });
 
 document.body.onkeyup = function(e){
-    if(e.keyCode === 32 && e.target === document.body){
+    if(e.keyCode === 32 && e.target === document.body) {
         e.preventDefault();
-        drawerElement.classList.toggle("open");
+        toggleDrawer();
     }
 }
 

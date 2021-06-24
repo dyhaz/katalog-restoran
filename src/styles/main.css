@@ -1,3 +1,7 @@
+main {
+    display: flex;
+}
+
 img {
     display: block;
 }
@@ -52,7 +56,7 @@ button, #hamburger {
 #hamburger {
     font-size: 44px;
     text-decoration: none;
-    color: black;
+    color: white;
     cursor: pointer;
     padding: 0 5px 0;
     min-width: 44px;
