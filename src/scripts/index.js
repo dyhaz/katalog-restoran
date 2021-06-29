@@ -1,51 +1,48 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
 import '../styles/colors.css';
-import './ui.js';
-console.log('Hello Coders! :)');
+import App from './views/app';
 
-let xmlhttp = new XMLHttpRequest();
-let url = "DATA.json";
+const xmlhttp = new XMLHttpRequest();
+const url = 'DATA.json';
 
 const maxChars = 200;
-const imgHeight = 213 //213
-const imgWidth = 313 //313
+const imgHeight = 213; // 213
+const imgWidth = 313; // 313
 
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState === 4 && this.status === 200) {
-        let res = JSON.parse(this.responseText);
-        processData(res);
-    }
+xmlhttp.onreadystatechange = () => {
+  if (this.readyState === 4 && this.status === 200) {
+    const res = JSON.parse(this.responseText);
+    processData(res);
+  }
 };
-xmlhttp.open("GET", url, true);
+xmlhttp.open('GET', url, true);
 xmlhttp.send();
 
 function processData(res) {
-    let arr = res.restaurants;
-    let resizeImg = (src, id) => {
-        let img = new Image();
-        img.crossOrigin = "anonymous";
-        img.onload = function() {
-            // Start resizing
+  const arr = res.restaurants;
+  const resizeImg = (src, id) => {
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = () => {
+      // Start resizing
 
-            // create an off-screen canvas
-            let canvas = document.createElement('canvas'),
-                ctx = canvas.getContext('2d');
-            ctx.drawImage(img, 0, 0, imgWidth, imgHeight);
+      // create an off-screen canvas
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, imgWidth, imgHeight);
 
-            // encode image to data-uri with base64 version of compressed image
-            document.getElementsByClassName("img" + id)[0].src = canvas.toDataURL();
-        };
+      // encode image to data-uri with base64 version of compressed image
+      document.getElementsByClassName(`img${id}`)[0].src = canvas.toDataURL();
+    };
 
-        img.src = src;
-    }
+    img.src = src;
+  };
 
-    let truncateStr = (str, n) => {
-        return (str.length > n) ? str.substr(0, n-1) + '&hellip;' : str;
-    }
+  const truncateStr = (str, n) => ((str.length > n) ? `${str.substr(0, n - 1)}&hellip;` : str);
 
-    for (let i = 0 ; i < arr.length ; i ++) {
-        let element = `
+  arr.length.forEach((val, i) => {
+    const element = `
             <div class="card-item">
                 <div class="content-box">
                     <img height="213" class="img${i}" src="${arr[i].pictureId}" alt="${arr[i].name}">
@@ -60,16 +57,20 @@ function processData(res) {
                       <span class="fas fa-star s3 ${arr[i].rating >= 3 ? 'active' : ''}"></span>
                       <span class="fas fa-star s4 ${arr[i].rating >= 4 ? 'active' : ''}"></span>
                       <span class="fas fa-star s5" ${arr[i].rating === 5 ? 'active' : ''}></span>
-                      (${arr[i].rating + '/ 5'})
+                      (${`${arr[i].rating}/ 5`})
                     </div> 
                     <h4>${arr[i].name}</h4>
                     <p>${truncateStr(arr[i].description, maxChars)}</p>
                 </div>
             </div>
-        `
-        document.getElementsByClassName("card")[0].insertAdjacentHTML('beforeend', element);
-        resizeImg(arr[i].pictureId, i);
-    }
+        `;
+    document.getElementsByClassName('card')[0].insertAdjacentHTML('beforeend', element);
+    resizeImg(arr[i].pictureId, i);
+  });
 }
 
-
+const app = new App({
+  button: document.querySelector('#hamburgerButton'),
+  drawer: document.querySelector('#navigationDrawer'),
+  content: document.querySelector('#mainContent'),
+});
