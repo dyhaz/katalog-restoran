@@ -3,21 +3,9 @@ import '../styles/main.css';
 import '../styles/colors.css';
 import App from './views/app';
 
-const xmlhttp = new XMLHttpRequest();
-const url = 'DATA.json';
-
 const maxChars = 200;
 const imgHeight = 213; // 213
 const imgWidth = 313; // 313
-
-xmlhttp.onreadystatechange = () => {
-  if (this.readyState === 4 && this.status === 200) {
-    const res = JSON.parse(this.responseText);
-    processData(res);
-  }
-};
-xmlhttp.open('GET', url, true);
-xmlhttp.send();
 
 function processData(res) {
   const arr = res.restaurants;
@@ -70,7 +58,15 @@ function processData(res) {
 }
 
 const app = new App({
-  button: document.querySelector('#hamburgerButton'),
-  drawer: document.querySelector('#navigationDrawer'),
-  content: document.querySelector('#mainContent'),
+  button: document.querySelector('#hamburger'),
+  drawer: document.querySelector('#drawer'),
+  content: document.querySelector('.card'),
+});
+
+window.addEventListener('hashchange', () => {
+  app.renderPage();
+});
+
+window.addEventListener('load', () => {
+  app.renderPage();
 });
