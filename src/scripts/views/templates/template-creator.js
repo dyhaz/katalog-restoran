@@ -1,4 +1,28 @@
 import CONFIG from '../../globals/config';
+import truncateStr from '../../utils/string-utils';
+
+const createRestaurantItemTemplate = (rest, i) => `
+            <div class="card-item">
+                <div class="content-box">
+                    <img height="213" class="img${i}" src="${rest.pictureId}" alt="${rest.name}">
+                    <div id="ribbon-container">
+                        <a href="#" id="ribbon" target="_blank">${rest.city}</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="star-wrapper">
+                      <span class="fas fa-star s1 ${rest.rating >= 1 ? 'active' : ''}"></span>
+                      <span class="fas fa-star s2 ${rest.rating >= 2 ? 'active' : ''}"></span>
+                      <span class="fas fa-star s3 ${rest.rating >= 3 ? 'active' : ''}"></span>
+                      <span class="fas fa-star s4 ${rest.rating >= 4 ? 'active' : ''}"></span>
+                      <span class="fas fa-star s5" ${rest.rating === 5 ? 'active' : ''}></span>
+                      (${`${rest.rating}/ 5`})
+                    </div> 
+                    <h4>${rest.name}</h4>
+                    <p>${truncateStr(rest.description, CONFIG.MAX_CHARS)}</p>
+                </div>
+            </div>
+`;
 
 const createMovieDetailTemplate = (movie) => `
   <h2 class="movie__title">${movie.title}</h2>
@@ -36,4 +60,4 @@ const createMovieItemTemplate = (movie) => `
   </div>
   `;
 
-export { createMovieItemTemplate, createMovieDetailTemplate };
+export { createRestaurantItemTemplate, createMovieItemTemplate, createMovieDetailTemplate };
