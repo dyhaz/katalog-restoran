@@ -3,6 +3,13 @@ const CONFIG = {
   BASE_URL: 'https://api.themoviedb.org/3/',
   BASE_IMAGE_URL: 'https://image.tmdb.org/t/p/w500/',
   DEFAULT_LANGUAGE: 'en-us',
+  CACHE_NAME: 'HungryVegans-V1',
+  RESTAURANT_API: {
+    BASE_URL: 'https://restaurant-api.dicoding.dev/',
+    BASE_IMAGE_URL: {
+      MEDIUM: 'https://restaurant-api.dicoding.dev/images/medium/',
+    },
+  },
   MAX_CHARS: 200,
   IMG_HEIGHT: 213, // 213
   IMG_WIDTH: 313, // 313

@@ -1,5 +1,5 @@
-import FakeDbSource from '../../data/fakedb-source';
 import { createRestaurantItemTemplate } from '../templates/template-creator';
+import RestaurantSource from '../../data/restaurant-source';
 
 const Restaurants = {
   async render() {
@@ -13,7 +13,7 @@ const Restaurants = {
   },
 
   async afterRender() {
-    const restaurants = await FakeDbSource.restaurants();
+    const restaurants = await RestaurantSource.restaurants();
     const restaurantsContainer = document.querySelector('.card');
     restaurants.forEach((res, i) => {
       restaurantsContainer.innerHTML += createRestaurantItemTemplate(res, i);

@@ -40,6 +40,15 @@ div {
     min-height: 44px;
 }
 
+.title-href {
+    color: #14282b;
+    transition: 0.3s;
+}
+
+.title-href:hover {
+    color: blue;
+}
+
 button, #hamburger {
     background: none;
     border: 1px solid rgba(255, 0, 0, 0);
