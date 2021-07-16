@@ -8,5 +8,8 @@
         "sourceType": "module"
     },
     "rules": {
+    },
+    "globals": {
+        "JsLoadingOverlay": "readonly"
     }
 }

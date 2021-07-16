@@ -22,10 +22,16 @@ class App {
   }
 
   async renderPage() {
+    // Show spinner
+    JsLoadingOverlay.show({ spinnerIcon: 'ball-circus' });
+
     const url = UrlParser.parseActiveUrlWithCombiner();
     const page = routes[url];
     this._content.innerHTML = await page.render();
     await page.afterRender();
+
+    // Hide spinner
+    JsLoadingOverlay.hide();
   }
 }
 
