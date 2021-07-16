@@ -34,6 +34,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
+}
+
+.like:hover {
+    background-color: #f17373;
 }
 
 div {
@@ -124,10 +129,20 @@ button, #hamburger {
     .card-item:not(:nth-child(3n)) {
         margin-right: 8px !important;
     }
+
+    .row {
+        display: grid;
+        grid-row-gap: 20px;
+        grid-column-gap: 5%;
+    }
 }
 
 .main {
     text-align: center;
+}
+
+.row {
+    grid-template-columns: 1fr 1fr 0fr;
 }
 
 .card {
@@ -438,4 +453,15 @@ ul {
 
 .skip-link:focus {
     top: 0;
+}
+
+
+/* Restaurant Detail */
+.restaurant__content {
+    margin-top: 20px;
+    text-align: justify !important;
+}
+
+.restaurant__poster {
+    width: 100%;
 }
