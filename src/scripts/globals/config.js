@@ -10,6 +10,9 @@ const CONFIG = {
       MEDIUM: 'https://restaurant-api.dicoding.dev/images/medium/',
     },
   },
+  DATABASE_NAME: 'restaurant-database',
+  DATABASE_VERSION: 1,
+  OBJECT_STORE_NAME: 'restaurants',
   MAX_CHARS: 200,
   IMG_HEIGHT: 213, // 213
   IMG_WIDTH: 313, // 313

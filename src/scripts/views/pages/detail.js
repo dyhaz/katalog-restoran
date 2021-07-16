@@ -1,11 +1,13 @@
 import UrlParser from '../../routes/url-parser';
 import { createRestaurantDetailTemplate } from '../templates/template-creator';
 import RestaurantSource from '../../data/restaurant-source';
+import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const Detail = {
   async render() {
     return `
       <div id="restaurant" class="restaurant"></div>
+      <div id="likeButtonContainer"></div>
     `;
   },
 
@@ -18,9 +20,20 @@ const Detail = {
 
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
-    const movie = await RestaurantSource.detail(url.id);
+    const getDetail = await RestaurantSource.detail(url.id);
     const movieContainer = document.querySelector('#restaurant');
-    movieContainer.innerHTML = createRestaurantDetailTemplate(movie);
+    movieContainer.innerHTML = createRestaurantDetailTemplate(getDetail);
+
+    LikeButtonInitiator.init({
+      likeButtonContainer: document.querySelector('#likeButtonContainer'),
+      restaurant: {
+        id: getDetail.id,
+        name: getDetail.name,
+        description: getDetail.description,
+        address: getDetail.address,
+        pictureId: getDetail.pictureId,
+      },
+    });
   },
 };
 

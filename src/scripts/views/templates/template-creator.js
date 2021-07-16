@@ -2,12 +2,12 @@ import CONFIG from '../../globals/config';
 import truncateStr from '../../utils/string-utils';
 
 const createRestaurantDetailTemplate = (rest) => `
-  <h2 class="movie__title">${rest.title}</h2>
-  <img class="movie__poster" src="${CONFIG.BASE_IMAGE_URL + rest.poster_path}" alt="${rest.title}" />
+  <h2 class="movie__title">${rest.name}</h2>
+  <img class="movie__poster" src="${CONFIG.RESTAURANT_API.BASE_IMAGE_URL.MEDIUM + rest.pictureId}" alt="${rest.name}" />
   <div class="movie__info">
-  <h3>Information</h3>
-    <h4>Tagline</h4>
-    <p>${rest.tagline}</p>
+    <h3>Information</h3>
+    <h4>Description</h4>
+    <p>${rest.description}</p>
     <h4>Release Date</h4>
     <p>${rest.release_date}</p>
     <h4>Duration</h4>
@@ -80,7 +80,20 @@ const createMovieItemTemplate = (movie) => `
   </div>
   `;
 
+const createLikeButtonTemplate = () => `
+  <button aria-label="like this movie" id="likeButton" class="like">
+     <i class="fa fa-heart-o" aria-hidden="true"></i>
+  </button>
+`;
+
+const createLikedButtonTemplate = () => `
+  <button aria-label="unlike this movie" id="likeButton" class="like">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+  </button>
+`;
+
 export {
   createRestaurantItemTemplate, createRestaurantDetailTemplate,
   createMovieItemTemplate, createMovieDetailTemplate,
+  createLikeButtonTemplate, createLikedButtonTemplate,
 };
