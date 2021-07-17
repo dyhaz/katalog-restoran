@@ -24,11 +24,21 @@ const createRestaurantDetailTemplate = (rest) => `
             <h4>Address</h4>
             <p>${rest.address}</p>
           </div>
-          <div class="restaurant__overview">
-            <h3>Overview</h3>
-            <p>${rest.overview}</p>
-          </div>
         </div>
+    </div>
+    <div class="restaurant__overview">
+      <h3>Overview</h3>
+      <div class="row">
+          ${rest.customerReviews.map((review) => `
+              <div class="col overview_item">
+                  <div class="overview_profile">
+                    <img width="36px" height="36px" src="images/blank.png" alt="profile" />
+                    <h4>${review.name}</h4>
+                  </div>
+                  <p>${review.review}</p>
+              </div>                  
+          `).join('')}
+      </div>
     </div>
   </div>
 `;

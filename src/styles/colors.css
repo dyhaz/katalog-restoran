@@ -54,4 +54,9 @@ main .fa-bars {
   color: #fff;
 }
 
+.overview_item {
+  background-color: #ddffbc;
+  border: 1px solid #52734d;
+}
+
 /*# sourceMappingURL=colors.css.map */

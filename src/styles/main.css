@@ -135,6 +135,13 @@ button, #hamburger {
         grid-row-gap: 20px;
         grid-column-gap: 5%;
     }
+
+    /* Restaurant Detail */
+    .restaurant__overview .row {
+        display: grid;
+        grid-row-gap: 5px !important;
+        grid-template-columns: 2fr 2fr 2fr !important;
+    }
 }
 
 .main {
@@ -142,7 +149,7 @@ button, #hamburger {
 }
 
 .row {
-    grid-template-columns: 1fr 1fr 0fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .card {
@@ -464,4 +471,34 @@ ul {
 
 .restaurant__poster {
     width: 100%;
+}
+
+.restaurant__overview .row {
+    display: grid;
+    grid-template-columns: 2fr;
+    text-align: left !important;
+}
+
+.overview_item {
+    box-shadow: 5px 5px 2px #aaaaaa;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.overview_profile {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.overview_profile img {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    max-width: 36px;
+    border-radius: 100%;
 }
