@@ -41,6 +41,32 @@ img {
     background-color: #f17373;
 }
 
+/*
+    Write a review
+ */
+.review {
+    font-size: 18px;
+    position: fixed;
+    bottom: 16px;
+    right: 72px;
+    background-color: #0f00db;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.review:hover {
+    background-color: #739df1;
+}
+
+
 div {
     /*border: 1px dashed black;*/
 }

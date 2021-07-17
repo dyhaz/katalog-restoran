@@ -34,7 +34,7 @@ const createRestaurantDetailTemplate = (rest) => `
         </div>
     </div>
     <div class="restaurant__overview">
-      <h3>Overview</h3>
+      <h3>Consumer Reviews</h3>
       <div class="row">
           ${rest.customerReviews.map((review) => `
               <div class="col overview_item">
@@ -121,8 +121,14 @@ const createLikedButtonTemplate = () => `
   </button>
 `;
 
+const createWriteReviewButtonTemplate = () => `
+  <button aria-label="write a review" id="reviewButton" title="write a review" class="review">
+    <i class="fa fa-pencil" aria-hidden="true"></i>
+  </button>
+`;
+
 export {
   createRestaurantItemTemplate, createRestaurantDetailTemplate,
   createMovieItemTemplate, createMovieDetailTemplate,
-  createLikeButtonTemplate, createLikedButtonTemplate,
+  createLikeButtonTemplate, createWriteReviewButtonTemplate, createLikedButtonTemplate,
 };
