@@ -6,6 +6,13 @@ const createRestaurantDetailTemplate = (rest) => `
     <div class="row">
         <div class="col">
           <img class="restaurant__poster" src="${CONFIG.RESTAURANT_API.BASE_IMAGE_URL.MEDIUM + rest.pictureId}" alt="${rest.name}" />
+          <div class="cat_row">
+            ${rest.categories.map((cat) => `
+                <a href="#" class="cat_item">
+                    <strong>${cat.name}</strong>
+                </a>
+            `).join('')}          
+          </div>
         </div>
         <div class="col">
           <h2 class="restaurant__title">${rest.name}</h2>

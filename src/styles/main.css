@@ -502,3 +502,33 @@ ul {
     max-width: 36px;
     border-radius: 100%;
 }
+
+.cat_row {
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.cat_item {
+    text-decoration: none;
+    margin:0 5px;
+    padding: 0px 4px 4px;
+    border-radius: 100px;
+    background-color: gray;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cat_item:hover {
+    background-color: #acacac;
+}
+
+.cat_item strong {
+    color: white;
+    font-size: 14px;
+}
