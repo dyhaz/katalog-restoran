@@ -13,6 +13,18 @@ const createRestaurantDetailTemplate = (rest) => `
                 </a>
             `).join('')}          
           </div>
+          <h4>Foods</h4>
+          <div class="foods_row">
+            ${rest.menus.foods.map((food) => `
+                ${food.name},
+            `).join('').trim().slice(0, -1)}
+          </div>
+          <h4>Drinks</h4>
+          <div class="drinks_row">
+            ${rest.menus.drinks.map((drink) => `
+                ${drink.name},
+            `).join('').trim().slice(0, -1)}
+          </div>
         </div>
         <div class="col">
           <h2 class="restaurant__title">${rest.name}</h2>

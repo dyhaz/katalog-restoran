@@ -60,6 +60,7 @@ img {
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+    margin-right: 5px;
 }
 
 .review:hover {
