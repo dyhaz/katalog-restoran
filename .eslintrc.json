@@ -8,7 +8,9 @@
         "sourceType": "module"
     },
     "rules": {
-        "no-underscore-dangle": "off"
+        "no-underscore-dangle": "off",
+        "no-restricted-globals": "off",
+        "no-alert": "off"
     },
     "globals": {
         "JsLoadingOverlay": "readonly"

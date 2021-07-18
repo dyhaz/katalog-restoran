@@ -59,4 +59,9 @@ main .fa-bars {
   border: 1px solid #52734d;
 }
 
+#btn_submit {
+  background-color: #52734d;
+  color: #feffde;
+}
+
 /*# sourceMappingURL=colors.css.map */

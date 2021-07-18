@@ -163,6 +163,12 @@ button, #hamburger {
         grid-column-gap: 5%;
     }
 
+    .form__row {
+        display: grid;
+        grid-row-gap: 20px;
+        grid-column-gap: 5%;
+    }
+
     /* Restaurant Detail */
     .restaurant__overview .row {
         display: grid;
@@ -179,6 +185,33 @@ button, #hamburger {
     grid-template-columns: 1fr 1fr;
 }
 
+
+/* Forms */
+.form__row {
+    text-align: left;
+    grid-template-columns: 0.2fr 1.8fr;
+}
+
+.form__row input {
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100%
+}
+
+.form__row textarea {
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100%
+}
+
+#btn_submit {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/** Card **/
 .card {
     width: 100%;
     justify-content: center;

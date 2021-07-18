@@ -11,18 +11,10 @@ const Detail = {
     `;
   },
 
-  // async afterRender() {
-  //   const url = UrlParser.parseActiveUrlWithoutCombiner();
-  //   const movie = await TheMovieDbSource.detailMovie(url.id);
-  //   const movieContainer = document.querySelector('#movie');
-  //   movieContainer.innerHTML = createMovieDetailTemplate(movie);
-  // },
-
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const getDetail = await RestaurantSource.detail(url.id);
-    const movieContainer = document.querySelector('#restaurant');
-    movieContainer.innerHTML = createRestaurantDetailTemplate(getDetail);
+    await this.reloadDetail(getDetail);
 
     FloatingButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
@@ -34,6 +26,11 @@ const Detail = {
         pictureId: getDetail.pictureId,
       },
     });
+  },
+
+  async reloadDetail(detail) {
+    const movieContainer = document.querySelector('#restaurant');
+    movieContainer.innerHTML = createRestaurantDetailTemplate(detail);
   },
 };
 
