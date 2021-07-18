@@ -8,7 +8,8 @@
     "start-dev": "sass src/styles/colors.scss src/styles/colors.css && webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "test": "karma start",
-    "watch-css": "sass --watch src/styles/colors.scss src/styles/colors.scss"
+    "watch-css": "sass --watch src/styles/colors.scss src/styles/colors.scss",
+    "lint": "eslint . --ext .js"
   },
   "keywords": [],
   "author": "muhammad <muhammad-11@fst.unair.ac.id>",

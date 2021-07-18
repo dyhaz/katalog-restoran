@@ -13,6 +13,9 @@
         "no-alert": "off"
     },
     "globals": {
-        "JsLoadingOverlay": "readonly"
+        "JsLoadingOverlay": "readonly",
+        "describe": "readonly",
+        "it": "readonly",
+        "expect": "readonly"
     }
 }
