@@ -1,4 +1,5 @@
 import API_ENDPOINT from '../globals/api-endpoint';
+import CONFIG from "../globals/config";
 
 class RestaurantSource {
   static async restaurants() {
@@ -33,7 +34,7 @@ class RestaurantSource {
       credentials: 'same-origin', // include, *same-origin, omit
       headers: {
         'Content-Type': 'application/json',
-        'X-Auth-Token': '12345',
+        'X-Auth-Token': CONFIG.RESTAURANT_API.API_KEY,
       },
       redirect: 'follow', // manual, *follow, error
       referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
