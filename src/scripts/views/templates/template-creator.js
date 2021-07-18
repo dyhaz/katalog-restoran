@@ -8,7 +8,7 @@ const createRestaurantDetailTemplate = (rest) => `
           <img class="restaurant__poster" src="${CONFIG.RESTAURANT_API.BASE_IMAGE_URL.MEDIUM + rest.pictureId}" alt="${rest.name}" />
           <div class="cat_row">
             ${rest.categories.map((cat) => `
-                <a href="#" class="cat_item">
+                <a href="/#/search/${cat.name}" class="cat_item">
                     <strong>${cat.name}</strong>
                 </a>
             `).join('')}          

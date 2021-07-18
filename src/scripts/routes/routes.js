@@ -6,6 +6,7 @@ import WriteReview from '../views/pages/write-review';
 
 const routes = {
   '/': Restaurants, // default page
+  '/search/:id': Restaurants,
   '/now-playing': NowPlaying,
   '/upcoming': Upcoming,
   '/detail/:id': Detail,
