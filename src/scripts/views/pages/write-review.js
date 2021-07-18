@@ -68,7 +68,7 @@ const WriteReview = {
       // Hide spinner
       JsLoadingOverlay.hide();
       alert('Review added!');
-      window.location.href = `/#/detail/${url.id}`;
+      window.location.replace(`/#/detail/${url.id}`);
     });
   },
 };
