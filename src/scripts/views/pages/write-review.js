@@ -59,16 +59,22 @@ const WriteReview = {
     txtRestaurant.value = getDetail.name;
     const btnSubmit = document.querySelector('#btn_submit');
     btnSubmit.addEventListener('click', async () => {
-      // Show spinner
-      JsLoadingOverlay.show({ spinnerIcon: 'ball-circus' });
+      const reviewer = document.querySelector('#txt_name').value;
+      const review = document.querySelector('#txt_review').value;
 
-      await RestaurantSource.review(url.id, document.querySelector('#txt_name').value,
-        document.querySelector('#txt_review').value);
+      if (review && reviewer) {
+        // Show spinner
+        JsLoadingOverlay.show({ spinnerIcon: 'ball-circus' });
 
-      // Hide spinner
-      JsLoadingOverlay.hide();
-      alert('Review added!');
-      window.location.replace(`/#/detail/${url.id}`);
+        await RestaurantSource.review(url.id, reviewer, review);
+
+        // Hide spinner
+        JsLoadingOverlay.hide();
+        alert('Review added!');
+        window.location.replace(`/#/detail/${url.id}`);
+      } else {
+        alert('Please fill the required fields!');
+      }
     });
   },
 };

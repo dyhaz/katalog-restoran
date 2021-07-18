@@ -2,19 +2,25 @@ import API_ENDPOINT from '../globals/api-endpoint';
 
 class RestaurantSource {
   static async restaurants() {
-    const response = await fetch(API_ENDPOINT.RESTAURANT_API.LIST);
+    const response = await fetch(API_ENDPOINT.RESTAURANT_API.LIST).catch((err) => {
+      alert(err);
+    });
     const responseJson = await response.json();
     return responseJson.restaurants;
   }
 
   static async search(query) {
-    const response = await fetch(API_ENDPOINT.RESTAURANT_API.SEARCH(query));
+    const response = await fetch(API_ENDPOINT.RESTAURANT_API.SEARCH(query)).catch((err) => {
+      alert(err);
+    });
     const responseJson = await response.json();
     return responseJson.restaurants;
   }
 
   static async detail(id) {
-    const response = await fetch(API_ENDPOINT.RESTAURANT_API.DETAIL(id));
+    const response = await fetch(API_ENDPOINT.RESTAURANT_API.DETAIL(id)).catch((err) => {
+      alert(err);
+    });
     const responseJson = await response.json();
     return responseJson.restaurant;
   }
@@ -32,6 +38,8 @@ class RestaurantSource {
       redirect: 'follow', // manual, *follow, error
       referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
       body: JSON.stringify({ id, name, review }), // body data type must match "Content-Type" header
+    }).catch(() => {
+      alert('Cannot add review, please try again later!');
     });
 
     const responseJson = await response.json();
