@@ -22,8 +22,10 @@ const Detail = {
         id: getDetail.id,
         name: getDetail.name,
         description: getDetail.description,
+        city: getDetail.city,
         address: getDetail.address,
         pictureId: getDetail.pictureId,
+        rating: getDetail.rating,
       },
     });
   },
