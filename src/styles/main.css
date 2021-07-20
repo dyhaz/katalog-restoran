@@ -496,7 +496,7 @@ ul {
     left:3px;
 }
 
-#ribbon-container a {
+#ribbon-container span {
     display:block;
     padding:20px;
     position:relative;
@@ -507,7 +507,7 @@ ul {
 }
 
 
-#ribbon-container a:hover:before {
+#ribbon-container span:hover:before {
     border-top: 29px solid #009ff1;
     border-bottom: 29px solid #009ff1;
 }

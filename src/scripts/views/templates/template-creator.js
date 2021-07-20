@@ -67,7 +67,7 @@ const createRestaurantItemTemplate = (rest, i) => `
       <div class="content-box">
           <img height="213" class="img${i}" src="${CONFIG.RESTAURANT_API.BASE_IMAGE_URL.MEDIUM + rest.pictureId}" alt="${rest.name}">
           <div id="ribbon-container">
-              <a href="#" id="ribbon" target="_blank">${rest.city}</a>
+              <span id="ribbon">${rest.city}</span>
           </div>
       </div>
       <div>

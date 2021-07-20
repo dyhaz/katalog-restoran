@@ -49,13 +49,13 @@ main {
 
 // Ribbon
 
-#ribbon-container a {
+#ribbon-container span {
   border: 2px solid $color5;
   background-color: $color4;
   color: $color2;
 }
 
-#ribbon-container a:hover {
+#ribbon-container span:hover {
   background: $color3;
 }
 

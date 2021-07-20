@@ -35,13 +35,13 @@ main .fa-bars {
   color: #fff;
 }
 
-#ribbon-container a {
+#ribbon-container span {
   border: 2px solid #14282b;
   background-color: #52734d;
   color: #ddffbc;
 }
 
-#ribbon-container a:hover {
+#ribbon-container span:hover {
   background: #91c788;
 }
 
