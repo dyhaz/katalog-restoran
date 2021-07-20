@@ -11,6 +11,14 @@ img {
     overflow-x: hidden;
 }
 
+#header-apps {
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+    left: 0;
+    top: 0;
+}
+
 /* styling pendukung */
 .wrapper > div {
     padding: 16px;
@@ -142,6 +150,10 @@ button, #hamburger {
 
 /* minimal layar ukuran besar */
 @media screen and (min-width: 768px) {
+    #header-apps {
+        position: relative;
+    }
+
     .card {
         text-align: center;
         display: grid;

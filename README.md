@@ -1,6 +1,16 @@
 # Restaurant Apps (Dicoding Submission)
 Simple catalog app made from scratch.
 
+## Features
+
+* Main Page (Restaurant List)
+* Restaurant Detail
+* Favorite Restaurants
+* Native Capability
+
+![alt text](preview1.PNG)
+![alt text](preview2.PNG)
+
 ## Quick Start
 
 Clone project and install dependencies:

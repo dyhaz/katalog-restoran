@@ -14,6 +14,7 @@ const CONFIG = {
   DATABASE_NAME: 'restaurant-database',
   DATABASE_VERSION: 1,
   OBJECT_STORE_NAME: 'restaurants',
+  WEB_SOCKET_SERVER: 'wss://movies-feed.dicoding.dev',
   MAX_CHARS: 200,
   IMG_HEIGHT: 213, // 213
   IMG_WIDTH: 313, // 313
