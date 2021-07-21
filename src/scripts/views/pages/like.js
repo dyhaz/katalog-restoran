@@ -6,7 +6,7 @@ const Like = {
     return `
         <h1 id="list_title">Favorites</h1>
         <p id="list_desc">Your liked restaurants.</p>
-        <div class="card">
+        <div class="restaurant-content">
         <!-- Card goes here -->
         </div>
     `;
@@ -16,10 +16,19 @@ const Like = {
     let restaurants = [];
     restaurants = await FavoriteRestaurantIdb.getAllRestaurants();
 
-    const restaurantsContainer = document.querySelector('.card');
-    restaurants.forEach((res, i) => {
-      restaurantsContainer.innerHTML += createRestaurantItemTemplate(res, i);
-    });
+    const restaurantsContainer = document.querySelector('.restaurant-content');
+
+    if (restaurants.length === 0) {
+      restaurantsContainer.className = '';
+      restaurantsContainer.innerHTML = `
+        <p></p>
+        <i class="fa fa-star"></i>
+        <p></p>
+        <h3>No favorites yet</h3>
+      `;
+    }
+
+    restaurantsContainer.innerHTML += createRestaurantItemTemplate(restaurants);
   },
 };
 

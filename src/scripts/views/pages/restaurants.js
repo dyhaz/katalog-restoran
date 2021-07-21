@@ -7,7 +7,7 @@ const Restaurants = {
     return `
         <h1 id="list_title">Explore Restaurant</h1>
         <p id="list_desc">Cool vegan restaurants to eat near me.</p>
-        <div class="card">
+        <div class="restaurant-content">
         <!-- Card goes here -->
         </div>
     `;
@@ -25,10 +25,8 @@ const Restaurants = {
       restaurants = await RestaurantSource.restaurants();
     }
 
-    const restaurantsContainer = document.querySelector('.card');
-    restaurants.forEach((res, i) => {
-      restaurantsContainer.innerHTML += createRestaurantItemTemplate(res, i);
-    });
+    const restaurantsContainer = document.querySelector('.restaurant-content');
+    restaurantsContainer.innerHTML += createRestaurantItemTemplate(restaurants);
   },
 };
 

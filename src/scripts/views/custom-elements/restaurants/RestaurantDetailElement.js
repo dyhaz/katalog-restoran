@@ -1,0 +1,70 @@
+import CONFIG from '../../../globals/config';
+
+export default class RestaurantDetailElement extends HTMLElement {
+  connectedCallback() {
+    this.rest = JSON.parse(atob(this.getAttribute('restaurant'))) || null;
+
+    if (this.rest) {
+      this.innerHTML = `<div class="restaurant__content">
+        <div class="row">
+            <div class="col">
+              <img class="restaurant__poster" src="${CONFIG.RESTAURANT_API.BASE_IMAGE_URL.MEDIUM + this.rest.pictureId}" alt="${this.rest.name}" />
+              <div class="cat_row">
+                ${this.rest.categories.map((cat) => `
+                    <a href="/#/search/${cat.name}" class="cat_item">
+                        <strong>${cat.name}</strong>
+                    </a>
+                `).join('')}          
+              </div>
+              <h4>Foods</h4>
+              <div class="foods_row">
+                ${this.rest.menus.foods.map((food) => `
+                    ${food.name},
+                `).join('').trim().slice(0, -1)}
+              </div>
+              <h4>Drinks</h4>
+              <div class="drinks_row">
+                ${this.rest.menus.drinks.map((drink) => `
+                    ${drink.name},
+                `).join('').trim().slice(0, -1)}
+              </div>
+            </div>
+            <div class="col">
+              <h2 class="restaurant__title">${this.rest.name}</h2>
+              <div class="restaurant__info">
+                <div class="star-wrapper">
+                  <span class="fas fa-star s1 ${this.rest.rating >= 1 ? 'active' : ''}"></span>
+                  <span class="fas fa-star s2 ${this.rest.rating >= 2 ? 'active' : ''}"></span>
+                  <span class="fas fa-star s3 ${this.rest.rating >= 3 ? 'active' : ''}"></span>
+                  <span class="fas fa-star s4 ${this.rest.rating >= 4 ? 'active' : ''}"></span>
+                  <span class="fas fa-star s5" ${this.rest.rating === 5 ? 'active' : ''}></span>
+                  (${`${this.rest.rating}/ 5`})
+                </div>
+                <p>${this.rest.customerReviews.length} review${this.rest.customerReviews.length > 1 ? 's' : ''}</p>
+                <h4>Description</h4>
+                <p>${this.rest.description}</p>
+                <h4>Address</h4>
+                <p>${this.rest.address}</p>
+              </div>
+            </div>
+        </div>
+        <div class="restaurant__overview">
+          <h3>Consumer Reviews</h3>
+          <div class="row">
+              ${this.rest.customerReviews.map((review) => `
+                  <div class="col overview_item">
+                      <div class="overview_profile">
+                        <img width="36px" height="36px" src="images/blank.png" alt="profile" />
+                        <h4>${review.name}</h4>
+                      </div>
+                      <p>${review.review}</p>
+                  </div>                  
+              `).join('')}
+          </div>
+        </div>
+      </div>`;
+    }
+  }
+}
+
+window.customElements.define('app-restaurant-detail', RestaurantDetailElement);

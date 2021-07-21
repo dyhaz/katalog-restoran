@@ -5,6 +5,7 @@ import App from './views/app';
 import WebSocketInitiator from './utils/websocket-initiator';
 import swRegister from './utils/sw-register';
 import CONFIG from './globals/config';
+import './views/custom-elements/restaurants/index';
 
 const app = new App({
   button: document.querySelector('#hamburger'),

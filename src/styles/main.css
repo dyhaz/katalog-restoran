@@ -100,6 +100,7 @@ div {
 }
 
 .title-href {
+    font-size: 32px;
     color: #14282b;
     transition: 0.3s;
 }
@@ -154,7 +155,8 @@ button, #hamburger {
         position: relative;
     }
 
-    .card {
+    .card,
+    app-restaurant-item {
         text-align: center;
         display: grid;
         grid-row-gap: 20px;
@@ -224,7 +226,8 @@ button, #hamburger {
 }
 
 /** Card **/
-.card {
+.card,
+app-restaurant-item {
     width: 100%;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
@@ -586,14 +589,17 @@ ul {
 }
 
 .cat_item {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     margin:0 5px;
-    padding: 0px 4px 4px;
+    padding: 0 7px;
     border-radius: 100px;
     background-color: gray;
     border: 2px solid black;
     cursor: pointer;
     transition: 0.3s;
+    min-height: 44px;
 }
 
 .cat_item:hover {

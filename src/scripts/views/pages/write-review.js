@@ -44,7 +44,7 @@ const WriteReview = {
                 <div class="col">
                 </div>
                 <div class="col">
-                    <button id="btn_submit">Submit</button>
+                    <button id="btn_submit" aria-label="submit review">Submit</button>
                 </div>
             </div>
         </div>
