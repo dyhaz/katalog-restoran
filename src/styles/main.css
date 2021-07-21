@@ -100,7 +100,7 @@ div {
 }
 
 .title-href {
-    font-size: 32px;
+    font-size: 40px;
     color: #14282b;
     transition: 0.3s;
 }
@@ -600,6 +600,8 @@ ul {
     cursor: pointer;
     transition: 0.3s;
     min-height: 44px;
+    min-width: 44px;
+    justify-content: space-around;
 }
 
 .cat_item:hover {
