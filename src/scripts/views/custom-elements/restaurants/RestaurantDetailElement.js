@@ -1,4 +1,5 @@
 import CONFIG from '../../../globals/config';
+import truncateStr from '../../../utils/string-utils';
 
 export default class RestaurantDetailElement extends HTMLElement {
   connectedCallback() {
@@ -57,7 +58,7 @@ export default class RestaurantDetailElement extends HTMLElement {
                         <img class="lazyload" width="36px" height="36px" src="images/blank.png" alt="profile" />
                         <h4>${review.name}</h4>
                       </div>
-                      <p>${review.review}</p>
+                      <p>${truncateStr(review.review, CONFIG.MAX_CHARS)}</p>
                   </div>                  
               `).join('')}
           </div>
