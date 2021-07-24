@@ -5,5 +5,6 @@ export default class WriteReviewButtonElement extends HTMLElement {
           </button>`;
   }
 }
-
-window.customElements.define('app-review-button', WriteReviewButtonElement);
+if (!window.customElements.get('app-review-button')) {
+  window.customElements.define('app-review-button', WriteReviewButtonElement);
+}

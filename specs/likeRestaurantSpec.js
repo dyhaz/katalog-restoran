@@ -33,7 +33,7 @@ describe('Liking or Adding a Restaurant', () => {
     FavoriteRestaurantDB.deleteRestaurant(1);
   });
 
-  it('should not like the liked restaurant', async () => {
+  it('should not like the restaurant in the db', async () => {
     await createLikeButtonPresenterWithRestaurant({ id: 1 });
 
     await FavoriteRestaurantDB.putRestaurant({ id: 1 });

@@ -27,7 +27,7 @@ const itActsAsFavoriteRestaurantsModel = (favoriteRestaurant) => {
     favoriteRestaurant.putRestaurant({ id: 2 });
     favoriteRestaurant.putRestaurant({ id: 3 });
 
-    await favoriteRestaurant.deleteRestaurants(1);
+    await favoriteRestaurant.deleteRestaurant(1);
 
     expect(await favoriteRestaurant.getAllRestaurants()).toEqual([{ id: 2 }, { id: 3 }]);
   });
@@ -37,7 +37,7 @@ const itActsAsFavoriteRestaurantsModel = (favoriteRestaurant) => {
     favoriteRestaurant.putRestaurant({ id: 2 });
     favoriteRestaurant.putRestaurant({ id: 3 });
 
-    await favoriteRestaurant.deleteRestaurants(4);
+    await favoriteRestaurant.deleteRestaurant(4);
 
     expect(await favoriteRestaurant.getAllRestaurants()).toEqual([{ id: 1 }, { id: 2 }, { id: 3 }]);
   });

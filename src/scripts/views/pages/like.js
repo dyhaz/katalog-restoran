@@ -24,7 +24,7 @@ const Like = {
         <p></p>
         <i class="fa fa-star"></i>
         <p></p>
-        <h3>No favorites yet</h3>
+        <h3 id="no_favorites">No favorites yet</h3>
       `;
     }
 

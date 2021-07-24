@@ -8,7 +8,7 @@ export default class RestaurantDetailElement extends HTMLElement {
       this.innerHTML = `<div class="restaurant__content">
         <div class="row">
             <div class="col">
-              <img class="restaurant__poster" src="${CONFIG.RESTAURANT_API.BASE_IMAGE_URL.MEDIUM + this.rest.pictureId}" alt="${this.rest.name}" />
+              <img class="lazyload" class="restaurant__poster" src="${CONFIG.RESTAURANT_API.BASE_IMAGE_URL.MEDIUM + this.rest.pictureId}" alt="${this.rest.name}" />
               <div class="cat_row">
                 ${this.rest.categories.map((cat) => `
                     <a href="/#/search/${cat.name}" class="cat_item">
@@ -54,7 +54,7 @@ export default class RestaurantDetailElement extends HTMLElement {
               ${this.rest.customerReviews.map((review) => `
                   <div class="col overview_item">
                       <div class="overview_profile">
-                        <img width="36px" height="36px" src="images/blank.png" alt="profile" />
+                        <img class="lazyload" width="36px" height="36px" src="images/blank.png" alt="profile" />
                         <h4>${review.name}</h4>
                       </div>
                       <p>${review.review}</p>
@@ -66,5 +66,6 @@ export default class RestaurantDetailElement extends HTMLElement {
     }
   }
 }
-
-window.customElements.define('app-restaurant-detail', RestaurantDetailElement);
+if (!window.customElements.get('app-restaurant-detail')) {
+  window.customElements.define('app-restaurant-detail', RestaurantDetailElement);
+}

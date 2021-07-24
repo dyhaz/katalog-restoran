@@ -7,5 +7,6 @@ export default class LikeButtonElement extends HTMLElement {
         </button>`;
   }
 }
-
-window.customElements.define('app-like-button', LikeButtonElement);
+if (!window.customElements.get('app-like-button')) {
+  window.customElements.define('app-like-button', LikeButtonElement);
+}

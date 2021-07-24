@@ -18,6 +18,7 @@
         "it": "readonly",
         "expect": "readonly",
         "beforeEach": "readonly",
-        "afterEach": "readonly"
+        "afterEach": "readonly",
+        "actor": "readonly"
     }
 }

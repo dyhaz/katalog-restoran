@@ -34,5 +34,6 @@ export default class RestaurantItemElement extends HTMLElement {
     }
   }
 }
-
-window.customElements.define('app-restaurant-item', RestaurantItemElement);
+if (!window.customElements.get('app-restaurant-item')) {
+  window.customElements.define('app-restaurant-item', RestaurantItemElement);
+}
