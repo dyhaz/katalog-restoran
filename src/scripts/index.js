@@ -6,6 +6,8 @@ import WebSocketInitiator from './utils/websocket-initiator';
 import swRegister from './utils/sw-register';
 import CONFIG from './globals/config';
 import './views/custom-elements/restaurants/index';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const app = new App({
   button: document.querySelector('#hamburger'),

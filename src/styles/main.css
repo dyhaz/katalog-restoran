@@ -134,7 +134,7 @@ button, #hamburger {
 
 .hero {
     display: flex;
-    background-image: url('/images/heros/hero-image_2.jpg');
+    background-image: url('/images/heros/hero-image_2-small.jpg');
     background-size: cover;
     height: 200px;
     background-repeat: no-repeat;
@@ -151,6 +151,10 @@ button, #hamburger {
 
 /* minimal layar ukuran besar */
 @media screen and (min-width: 768px) {
+    .hero {
+        background-image: url('/images/heros/hero-image_2-large.jpg');
+    }
+
     #header-apps {
         position: relative;
     }

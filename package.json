@@ -7,6 +7,7 @@
     "start": "npm run start-dev",
     "start-dev": "sass src/styles/colors.scss src/styles/colors.css && webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
+    "build-image": "node src/scripts/sharp.js",
     "test": "karma start",
     "watch-css": "sass --watch src/styles/colors.scss src/styles/colors.scss",
     "lint": "eslint . --ext .js"
@@ -33,16 +34,19 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^4.0.2",
     "sass": "^1.32.12",
+    "sharp": "^0.28.3",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.0.9",
-    "whatwg-fetch": "^3.2.0"
+    "whatwg-fetch": "^3.2.0",
+    "ignore-loader": "^0.1.2"
   },
   "dependencies": {
     "idb": "^6.1.2",
     "js-loading-overlay": "^1.2.0",
+    "lazysizes": "^5.3.2",
     "regenerator-runtime": "^0.13.5",
     "serviceworker-webpack-plugin": "^1.0.1"
   }
