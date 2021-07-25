@@ -9,7 +9,7 @@ export default class RestaurantDetailElement extends HTMLElement {
       this.innerHTML = `<div class="restaurant__content">
         <div class="row">
             <div class="col">
-              <img class="lazyload" class="restaurant__poster" src="${CONFIG.RESTAURANT_API.BASE_IMAGE_URL.MEDIUM + this.rest.pictureId}" alt="${this.rest.name}" />
+              <img class="lazyload restaurant__poster skeleton-loader" height="213" src="${CONFIG.RESTAURANT_API.BASE_IMAGE_URL.MEDIUM + this.rest.pictureId}" alt="${this.rest.name}" />
               <div class="cat_row">
                 ${this.rest.categories.map((cat) => `
                     <a href="/#/search/${cat.name}" class="cat_item">
@@ -18,20 +18,20 @@ export default class RestaurantDetailElement extends HTMLElement {
                 `).join('')}          
               </div>
               <h4>Foods</h4>
-              <div class="foods_row">
+              <div class="foods_row skeleton-loader">
                 ${this.rest.menus.foods.map((food) => `
                     ${food.name},
                 `).join('').trim().slice(0, -1)}
               </div>
               <h4>Drinks</h4>
-              <div class="drinks_row">
+              <div class="drinks_row skeleton-loader">
                 ${this.rest.menus.drinks.map((drink) => `
                     ${drink.name},
                 `).join('').trim().slice(0, -1)}
               </div>
             </div>
             <div class="col">
-              <h2 class="restaurant__title">${this.rest.name}</h2>
+              <h2 class="restaurant__title skeleton-loader">${this.rest.name}</h2>
               <div class="restaurant__info">
                 <div class="star-wrapper">
                   <span class="fas fa-star s1 ${this.rest.rating >= 1 ? 'active' : ''}"></span>
@@ -43,15 +43,15 @@ export default class RestaurantDetailElement extends HTMLElement {
                 </div>
                 <p>${this.rest.customerReviews.length} review${this.rest.customerReviews.length > 1 ? 's' : ''}</p>
                 <h4>Description</h4>
-                <p>${this.rest.description}</p>
+                <p class="skeleton-loader">${this.rest.description}</p>
                 <h4>Address</h4>
-                <p>${this.rest.address}</p>
+                <p class="skeleton-loader">${this.rest.address}</p>
               </div>
             </div>
         </div>
         <div class="restaurant__overview">
           <h3>Consumer Reviews</h3>
-          <div class="row">
+          <div class="row skeleton-loader">
               ${this.rest.customerReviews.map((review) => `
                   <div class="col overview_item">
                       <div class="overview_profile">
@@ -59,7 +59,7 @@ export default class RestaurantDetailElement extends HTMLElement {
                         <h4>${review.name}</h4>
                       </div>
                       <p>${truncateStr(review.review, CONFIG.MAX_CHARS)}</p>
-                  </div>                  
+                  </div>
               `).join('')}
           </div>
         </div>

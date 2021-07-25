@@ -23,7 +23,7 @@ class App {
 
   async renderPage() {
     // Show spinner
-    JsLoadingOverlay.show({ spinnerIcon: 'ball-circus' });
+    // JsLoadingOverlay.show({ spinnerIcon: 'ball-circus' });
 
     const url = UrlParser.parseActiveUrlWithCombiner();
     const page = routes[url];
@@ -31,7 +31,7 @@ class App {
     await page.afterRender();
 
     // Hide spinner
-    JsLoadingOverlay.hide();
+    // JsLoadingOverlay.hide();
   }
 }
 

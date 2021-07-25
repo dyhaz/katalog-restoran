@@ -10,6 +10,28 @@ class RestaurantSource {
     return responseJson.restaurants;
   }
 
+  static async emptyRestaurants(n = 10) {
+    const restaurants = [];
+    for (let i = 0; i < n; i += 1) {
+      restaurants.push({
+        id: '',
+        name: '',
+        description: '',
+        pictureId: '',
+        city: '',
+        rating: '',
+        address: '',
+        categories: [],
+        menus: {
+          foods: [],
+          drinks: [],
+        },
+        customerReviews: [],
+      });
+    }
+    return restaurants;
+  }
+
   static async search(query) {
     const response = await fetch(API_ENDPOINT.RESTAURANT_API.SEARCH(query)).catch((err) => {
       alert(err);

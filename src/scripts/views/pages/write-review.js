@@ -64,12 +64,12 @@ const WriteReview = {
 
       if (review && reviewer) {
         // Show spinner
-        JsLoadingOverlay.show({ spinnerIcon: 'ball-circus' });
+        // JsLoadingOverlay.show({ spinnerIcon: 'ball-circus' });
 
         await RestaurantSource.review(url.id, reviewer, review);
 
         // Hide spinner
-        JsLoadingOverlay.hide();
+        // JsLoadingOverlay.hide();
         alert('Review added!');
         window.location.replace(`/#/detail/${url.id}`);
       } else {

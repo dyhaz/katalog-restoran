@@ -12,6 +12,7 @@ const Detail = {
   },
 
   async afterRender() {
+    await this.reloadDetail((await RestaurantSource.emptyRestaurants(1))[0]);
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const getDetail = await RestaurantSource.detail(url.id);
     await this.reloadDetail(getDetail);
@@ -31,8 +32,8 @@ const Detail = {
   },
 
   async reloadDetail(detail) {
-    const movieContainer = document.querySelector('#restaurant');
-    movieContainer.innerHTML = createRestaurantDetailTemplate(detail);
+    const restContainer = document.querySelector('#restaurant');
+    restContainer.innerHTML = createRestaurantDetailTemplate(detail);
   },
 };
 

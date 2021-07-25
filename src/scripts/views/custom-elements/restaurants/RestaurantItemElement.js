@@ -11,9 +11,9 @@ export default class RestaurantItemElement extends HTMLElement {
       this.rest.forEach((rest) => {
         this.innerHTML += `<div class="card-item">
           <div class="content-box">
-              <img class="lazyload" height="213" class="img${rest.id}" src="${CONFIG.RESTAURANT_API.BASE_IMAGE_URL.MEDIUM + rest.pictureId}" alt="${rest.name}">
+              <img class="lazyload skeleton-loader" height="213" class="img${rest.id}" src="${CONFIG.RESTAURANT_API.BASE_IMAGE_URL.MEDIUM + rest.pictureId}" alt="${rest.name}">
               <div id="ribbon-container">
-                  <span id="ribbon">${rest.city}</span>
+                  <span id="ribbon skeleton-loader">${rest.city}</span>
               </div>
           </div>
           <div>
@@ -25,8 +25,8 @@ export default class RestaurantItemElement extends HTMLElement {
                 <span class="fas fa-star s5" ${rest.rating === 5 ? 'active' : ''}></span>
                 (${`${rest.rating}/ 5`})
               </div> 
-              <h4><a class="title-href" href="${`/#/detail/${rest.id}`}">${rest.name}</a></h4>
-              <p>${truncateStr(rest.description, CONFIG.MAX_CHARS)}</p>
+              <h4><a class="title-href skeleton-loader" href="${`/#/detail/${rest.id}`}">${rest.name}</a></h4>
+              <p class="skeleton-loader">${truncateStr(rest.description, CONFIG.MAX_CHARS)}</p>
           </div>
         </div>
       `;

@@ -1,5 +1,6 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
+import '../styles/skeleton.css';
 import '../styles/colors.css';
 import App from './views/app';
 import WebSocketInitiator from './utils/websocket-initiator';
