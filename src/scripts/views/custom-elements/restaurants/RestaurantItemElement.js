@@ -11,7 +11,7 @@ export default class RestaurantItemElement extends HTMLElement {
       this.rest.forEach((rest) => {
         this.innerHTML += `<div class="card-item">
           <div class="content-box">
-              <img class="lazyload skeleton-loader" height="213" class="img${rest.id}" src="${CONFIG.RESTAURANT_API.BASE_IMAGE_URL.MEDIUM + rest.pictureId}" alt="${rest.name}">
+              <img class="lazyload skeleton-loader" height="213" class="img${rest.id}" data-src="${CONFIG.RESTAURANT_API.BASE_IMAGE_URL.MEDIUM + rest.pictureId}" alt="${rest.name}">
               <div id="ribbon-container">
                   <span id="ribbon skeleton-loader">${rest.city}</span>
               </div>
