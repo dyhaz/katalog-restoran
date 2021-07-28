@@ -15,8 +15,6 @@ export default class RestaurantItemElement extends HTMLElement {
               <div id="ribbon-container">
                   <span id="ribbon skeleton-loader">${rest.city}</span>
               </div>
-          </div>
-          <div>
               <div class="star-wrapper">
                 <span class="fas fa-star s1 ${rest.rating >= 1 ? 'active' : ''}"></span>
                 <span class="fas fa-star s2 ${rest.rating >= 2 ? 'active' : ''}"></span>
@@ -25,6 +23,8 @@ export default class RestaurantItemElement extends HTMLElement {
                 <span class="fas fa-star s5" ${rest.rating === 5 ? 'active' : ''}></span>
                 (${`${rest.rating}/ 5`})
               </div> 
+          </div>
+          <div>
               <h4><a class="title-href skeleton-loader" href="${`/#/detail/${rest.id}`}">${rest.name}</a></h4>
               <p class="skeleton-loader">${truncateStr(rest.description, CONFIG.MAX_CHARS)}</p>
           </div>
