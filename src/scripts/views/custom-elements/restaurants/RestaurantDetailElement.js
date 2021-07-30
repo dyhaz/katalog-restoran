@@ -45,7 +45,7 @@ export default class RestaurantDetailElement extends HTMLElement {
                 <h4>Description</h4>
                 <p class="skeleton-loader">${this.rest.description}</p>
                 <h4>Address</h4>
-                <p class="skeleton-loader">${this.rest.address}</p>
+                <p class="skeleton-loader"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;${this.rest.city}<br></br>${this.rest.address}</p>
               </div>
             </div>
         </div>
