@@ -24,3 +24,9 @@ Start the server:
 ```bash
 $ npm run start-dev
 ```
+
+## Build
+
+```bash
+npm run build && npm run build-image
+```
